@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+/* header,footer */
+header,footer {
+    height: 5vh;
+    background-color: gray;
+}
+.headtext{
+    color: aqua;
+    display: block;
+    font-size: smaller;
+    text-align: end;
+    padding-right: 10%;
+    padding-top: 5px;
+}
+/* main */
+.note{
+    border: 1px solid black;
+    width: 20%;
+    height: 100px;
+    background: repeating-linear-gradient(white,lightblue);
+}
+.row{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    gap: 5%;
+    background: transparent;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background: linear-gradient(90deg, red, tomato, white);
+    background-size: 5000px;
+    animation: bgleftoright 10s alternate infinite;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@keyframes bgleftoright{
+0%{background-position: left;}
+100%{background-position: right;}
+}
+/* the code after click */
+.txt{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #0d919b;
+}
+p{
+    text-align: left;
+}
+h1{
+    text-align: end;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+.txttoggle{
+    display: none;
+}
+#code0,#code1,#code2,#code3,#code4,#code5,#code6,#code7,#code8,#code9
+,#code10,#code11,#code12,#code13,#code14,#code15,#code16,#code17,
+#code18,#code19,#code20,#code21,#code22,#code23,#code24{
+    display: none;
+    max-width: 500px;
+    /* height: 50vh;
+    background: repeating-linear-gradient(lightblue,blue);
+    overflow: hidden;
+    overflow-y: scroll; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    border:3px solid black;
+    border-radius: 5px;
+}
+/* the tab 1x tab 2x */
+t1{
+    padding-left: 20px;
+}
+t2{
+    padding-left: 40px;
+}

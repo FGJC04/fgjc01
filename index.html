@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displayNotecode</title>
+    <link rel="stylesheet" href="displayNotecode.css">
+</head>
+<body>
+    <header>
+        <div class="headtext">
+            <h2>My Codes as a Student :</h2>
+        </div>
+    </header>
+<main class="container">
+        <dl class="row">
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+        </dl>
+        <dl class="row">
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+        </dl>
+        <dl class="row">
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+        </dl>
+        <dl class="row">
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+        </dl>
+        <dl class="row">
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+            <dt class="note" id="note" ></dt>
+        </dl>
+    <div class="txt txttoggle" id="txt">
+        <dl>
+            <dt><h1>X</h1></dt>
+            <dt id="code0">
+                <p >
+                    static int ReverseInteger(int num) <br>
+                    {<br>
+                    &nbsp;&nbsp;&nbsp;int reversed = 0;<br>
+                    &nbsp;&nbsp;&nbsp;while (num != 0)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int remainder = num % 10;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; reversed = reversed * 10 + remainder;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; num /= 10;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return reversed;<br>
+                    }<br>
+                    int num;<br>
+                    do{<br>
+                    &nbsp;&nbsp;Console.Write($"Enter a three digit number :");<br>
+                    &nbsp;&nbsp;num = int.Parse(Console.ReadLine());<br>
+                    } while (num < 100 || num > 999);<br>
+                    Console.ForegroundColor = ConsoleColor.Green;<br>
+                    int rev = ReverseInteger(num);<br>
+                    Console.WriteLine(rev);<br>
+                    int minus = (num > rev) ? num - rev : rev - num;<br>
+                    int arev = ReverseInteger(minus);<br>
+                    Console.WriteLine(arev);<br>
+                    int equal = minus + arev;<br>
+                    Console.WriteLine(equal);<br>
+                    string sen1 = (num > rev) ?<br>
+                    $"the entered value : {num} - reverse of the value : {rev} equals {minus}":<br>
+                    $"the entered value : {rev} - reverse of the value : {num} equals {minus}";<br>
+                    Console.WriteLine(sen1);<br>
+                    string sen2 = $"the minus value : {minus} + the reverse of minus value : {arev} = {equal}";<br>
+                    Console.WriteLine(sen2);<br>
+            
+                    Console.WriteLine("Note : every three digit that would minus to its reverse(depent on the highest)" +<br>
+                    $" \n then  the defference of previus calculation plus the reverse \n will always equal to : {equal} ");<br>
+
+                </p>
+            </dt>
+            <dt id="code1">
+                <p>
+                    int[,] x = new int[4, 2];<br>
+
+                    for (int i = 0; i < 4; i++)<br>
+                    {<br>
+                &nbsp;&nbsp;for (int j = 0; j < 2; j++)<br>
+                &nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write($" x[{i},{j} ]:");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x[i, j] = int.Parse(Console.ReadLine());<br>
+                &nbsp;&nbsp;}<br>
+                    }<br>
+                    int sum1 = 0, sum2 = 0;<br>
+                    for (int i = 0; i < 4; i++)<br>
+                    {<br>
+                    &nbsp;&nbsp;    sum1 += x[i,0] ;<br>
+                    &nbsp;&nbsp;    sum2 += x[i,1] ;<br>
+                    }<br>
+                    Console.WriteLine($"sum1 = {sum1} : sum2 = {sum2} ");
+
+                </p>
+            </dt>
+            <dt id="code2">
+                <p>
+                            Console.Write("how many fibonach do you want to create?: ");<br>
+                            int o = int.Parse(Console.ReadLine());<br>
+
+                            int[] container = new int[o];<br>
+                            container[0]= 0;<br>
+                            container[1]= 1;<br>
+                            container[2]= 1;<br>
+                            for(int x = 1, y = 2, z = 3; z < o; x++, y++, z++)<br>
+                            {<br>
+                                &nbsp;&nbsp;container[z] = container[y] + container[x];<br>
+                            }<br>
+                            Console.Write("Fibonacci Sequence: ");<br>
+                            foreach (var item in container)<br>
+                            {<br>
+                                &nbsp;&nbsp; Console.Write(item+" ");<br>
+                            }<br>
+                </p>
+            </dt>
+            <dt id="code3">
+                <p>
+                    static int ReverseInteger(int num)<br>
+                    {<br>
+                    int reversed = 0;<br>
+                    while (num != 0)<br>
+                        <t1></t1>{<br>
+                        <t2></t2>int remainder = num % 10;<br>
+                        <t2></t2>reversed = reversed * 10 + remainder;<br>
+                        <t2></t2>num /= 10;<br>
+                        <t1></t1>}<br>
+                        <t1></t1>return reversed;<br>
+                    }<br>
+                    int num;<br>
+                    do{<br>
+                        <t1></t1>Console.Write($"Enter a three digit number :");<br>
+                        <t1></t1>num = int.Parse(Console.ReadLine());<br>
+                    } while (num < 100 || num > 999);<br>
+
+                    Console.ForegroundColor = ConsoleColor.Green;<br>
+                    int rev = ReverseInteger(num);<br>
+                    Console.WriteLine(rev);<br>
+                    int minus = (num > rev) ? num - rev : rev - num;<br>
+                    int arev = ReverseInteger(minus);<br>
+                    Console.WriteLine(arev);<br>
+                    int equal = minus + arev;<br>
+                    Console.WriteLine(equal);<br>
+                    string sen1 = (num > rev) ?<br>
+                    $"the entered value : {num} - reverse of the value : {rev} equals {minus}":<br>
+                    $"the entered value : {rev} - reverse of the value : {num} equals {minus}";<br>
+                    Console.WriteLine(sen1);<br>
+                    string sen2 = $"the minus value :<br>
+                    {minus} + the reverse of minus value : {arev} = {equal}";<br>
+                    Console.WriteLine(sen2);<br>
+                    Console.WriteLine("Note : every three digit that would minus"+<br>
+                    "to its reverse(depent on the highest)" +<br>
+                    $" \n then the defference of previus calculation plus the reverse"<br>
+                    +"\n will always equal to : {equal} ");<br>
+                </p>
+            </dt>
+            <dt id="code4">Paste Here code 4</dt>
+            <dt id="code5">Paste Here code 5</dt>
+            <dt id="code6">Paste Here code 6</dt>
+            <dt id="code7">Paste Here code 7</dt>
+            <dt id="code8">Paste Here code 8</dt>
+            <dt id="code9">Paste Here code 9</dt>
+            <dt id="code10">Paste Here code 10</dt>
+            <dt id="code11">Paste Here code 11</dt>
+            <dt id="code12">Paste Here code 12</dt>
+            <dt id="code13">Paste Here code 13</dt>
+            <dt id="code14">Paste Here code 14</dt>
+            <dt id="code15">Paste Here code 15</dt>
+            <dt id="code16">Paste Here code 16</dt>
+            <dt id="code17">Paste Here code 17</dt>
+            <dt id="code18">Paste Here code 18</dt>
+            <dt id="code19">Paste Here code 19</dt>
+            <dt id="code20">Paste Here code 20</dt>
+            <dt id="code21">Paste Here code 21</dt>
+            <dt id="code22">Paste Here code 22</dt>
+            <dt id="code23">Paste Here code 23</dt>
+            <dt id="code24">Paste Here code 24</dt>
+        </dl>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script src="displayNotecode.js"></script>
+</body>
+</html>
